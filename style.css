@@ -1,29 +1,209 @@
+
 body {
-    background-color: #f8f9fa; /* Cor de fundo clara */
-    color: #333; /* Cor do texto */
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+body a{
+    color: black;
+    text-decoration: none;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #005f73;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+.navbar .logo h1 {
+    font-size: 2rem;
+    color: #ffdd57;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffdd57;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70vh;
+    padding: 3rem;
+    background: linear-gradient(135deg, #003d47, #005f73), url('https://via.placeholder.com/1600x900') no-repeat center/cover;
+    color: #ffffff;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #ffdd57, #ff0066);
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #e0e0e0;
+}
+
+.btn-primary {
+    background-color: #ffdd57;
+    padding: 0.8rem 1.5rem;
+    color: #003d47;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ffb400;
+    transform: scale(1.05);
+}
+
+/* Seções */
+.section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    color: #005f73;
+    margin-bottom: 2rem;
+}
+
+.section p {
+    font-size: 1.2rem;
+    color: #555555;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.feature-item {
+    background-color: #f1f1f1;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 350px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item h3 {
+    color: #005f73;
     margin-bottom: 1rem;
 }
 
-p {
-    line-height: 1.6;
+.feature-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
 }
 
-img {
-    max-height: 200px; /* Tamanho limitado para foco em dispositivos móveis */
+.feature-item p {
+    color: #555555;
 }
 
-footer {
-    font-size: 0.9rem;
+/* Área de Vídeo */
+.video-container {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
-.bg-light .text-dark, .py-5{
-    border: solid 2px black !important;
-    background-color: rgb(25, 135, 84) !important;
-    color: white !important;
+
+.video-container iframe {
+    border: none;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
 }
-.bg-light .text-dark, .py-5 a{
-    color: white !important;
+
+/* Footer */
+.footer {
+    background-color: #003d47;
+    color: #ffffff;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+/* Adaptabilidade para Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .section {
+        padding: 2rem;
+    }
+
+    .feature-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        max-width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .video-container iframe {
+        max-width: 100%;
+    }
+}
+#integrantes a{
+    color: #188ea5;
 }
