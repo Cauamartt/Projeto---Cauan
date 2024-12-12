@@ -14,7 +14,7 @@ body a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 5px;
+    padding: 10px 10px;
     background-color: #005f73;
     color: #ffffff;
     position: sticky;
@@ -206,9 +206,4 @@ body a{
 }
 #integrantes a{
     color: #188ea5;
-}
-
-img {
-    width: 130px;
-    height: 130px;  
 }
