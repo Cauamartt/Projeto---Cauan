@@ -207,3 +207,8 @@ body a{
 #integrantes a{
     color: #188ea5;
 }
+
+img {
+    width: 130px;
+    height: 130px;  
+}
