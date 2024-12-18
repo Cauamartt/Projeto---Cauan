@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <title>Leucócitos, Endocitose e Diapedese</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        function trocarImagem(id, novaSrc) {
+            const imagem = document.getElementById(id);
+            imagem.src = novaSrc;
+        }
+    </script>
 </head>
 
 <body>
@@ -29,21 +35,14 @@
     <section class="section" id="functions">
         <h2>Relação entre Leucócitos, Endocitose e Diapedese</h2>
         <p>A endocitose, os leucócitos e a diapedese estão interligados no processo de defesa do organismo contra
-            agentes invasores. A endocitose é o
-            mecanismo celular pelo qual partículas, como microrganismos ou detritos, são englobadas por uma célula. Os
-            leucócitos, células do sistema
-            imunológico, utilizam a endocitose para fagocitar e destruir agentes patogênicos. Para chegar ao local da
-            infecção ou inflamação, os leucócitos
-            realizam a diapedese, que é o processo de atravessar as paredes dos capilares sanguíneos para alcançar os
-            tecidos. Assim, a diapedese permite que
-            os leucócitos migrem para onde são necessários, e a endocitose é uma das ferramentas que eles utilizam para
-            combater ameaças.</p>
+            agentes invasores...</p>
 
-        <!--Primeiro assunto-->
+        <!-- Primeiro assunto -->
         <div class="feature-list">
             <div class="feature-item">
                 <h3>Leucócitos</h3>
-                <img src="imagens/leocócitos.jpeg" alt="Endocitose">
+                <img id="leucocitos-img" src="imagens/leocócitos.jpeg" alt="imagens/leococitos.png">
+                <button data-trocar data-target="leucocitos-img" data-novasrc="imagens/leocócitos.png" onclick="trocarImagem('leucocitos-img', 'imagens/leococitos.png')">Trocar imagem da Leucócitos</button>
                 <p>Leucócitos são células sanguíneas conhecidas por muitas pessoas como glóbulos brancos. Essas células
                     podem ser classificadas em diversos tipos, entretanto, todos atuam em prol de um bem comum: a defesa
                     do organismo.
@@ -59,73 +58,54 @@
                     conseguem projetar o seu citoplasma de modo a englobar partículas estranhas e, posteriormente,
                     realizar a digestão, destruindo o invasor. Já os ansticorpos são glicoproteínas específicas
                     produzidas pelos linfócitos B para atacar um determinado (organismo ou substância estranha).</p>
+                
             </div>
 
-            <!--Segundo assunto-->
-            <div class="feature-list">
-                <div class="feature-item">
-                    <h3>Endocitose</h3>
-                    <img src="imagens/endocitose.jpeg" alt="Endocitose">
-                    <p>Endocitose é um processo que ocorre nas células e tem por objetivo trazer para o interior dessa
-                        estrutura substâncias por meio da invaginação da membrana plasmática. Essas invaginações nada
-                        mais são que dobras na própria membrana para o interior da célula.
+            <!-- Segundo assunto -->
+            <div class="feature-item">
+                <h3>Endocitose</h3>
+                <img id="endocitose-img" src="imagens/endocitose.jpeg" alt="Endocitose">
+                <button data-trocar data-target="endocitose-img" data-novasrc="imagens/endocitose.png" onclick="trocarImagem('endocitose-img', 'imagens/endocitose.png')">Trocar imagem da endocitose</button>
+                <p>Endocitose é um processo que ocorre nas células e tem por objetivo trazer para o interior dessa
+                    estrutura substâncias por meio da invaginação da membrana plasmática. Essas invaginações nada
+                    mais são que dobras na própria membrana para o interior da célula.
 
-                        A endocitose ocorre tanto em organismos multicelulares como em seres unicelulares. Nos
-                        unicelulares, como protozoários, a endocitose é fundamental para garantir a nutrição dessas
-                        células. Sendo assim, a endocitose nesses organismos funciona como a principal forma de obter
-                        alimento.
+                    A endocitose ocorre tanto em organismos multicelulares como em seres unicelulares. Nos
+                    unicelulares, como protozoários, a endocitose é fundamental para garantir a nutrição dessas
+                    células. Sendo assim, a endocitose nesses organismos funciona como a principal forma de obter
+                    alimento.
 
-                        Em organismos multicelulares, por sua vez, a endocitose tem um papel um pouco diferenciado. Em
-                        nós, humanos, por exemplo, que possuímos uma digestão extracelular, as células não funcionam
-                        garantindo nossa nutrição. Nesse caso, a endocitose tem papel primordial na defesa. Esse é o
-                        caso dos glóbulos brancos do nosso corpo, que captam partículas e organismos invasores.
+                    Em organismos multicelulares, por sua vez, a endocitose tem um papel um pouco diferenciado. Em
+                    nós, humanos, por exemplo, que possuímos uma digestão extracelular, as células não funcionam
+                    garantindo nossa nutrição. Nesse caso, a endocitose tem papel primordial na defesa. Esse é o
+                    caso dos glóbulos brancos do nosso corpo, que captam partículas e organismos invasores.
 
-                        O processo de endocitose está presente apenas em eucariontes, pois procariontes não possuem
-                        citoesqueleto, fundamental para a movimentação das vesículas formadas no processo.</p>
-                </div>
-
-                <!--Terceiro assunto-->
-                <div class="feature-item">
-                    <h3>Diapedese</h3>
-                    <img src="imagens/diapedese.jpeg" alt="Diapedese">
-                    <p>A diapedese é o processo pelo qual os leucócitos, ou glóbulos brancos, saem dos vasos sanguíneos
-                        e passam para o tecido conjuntivo.
-
-                        A diapedese é um fenômeno fundamental do sistema imunológico, que ocorre em resposta a danos
-                        teciduais, como infecções e inflamações.
-
-                        A diapedese envolve uma série de etapas complexas, que incluem a rolamento dos leucócitos, a
-                        ligação com moléculas de adesão e a migração para o espaço intersticial.
-
-                        A diapedese também pode se referir à passagem de componentes do sangue para o espaço
-                        intersticial, formando edemas e, em casos patológicos, como a diátese hemorrágica.</p>
-                </div>
+                    O processo de endocitose está presente apenas em eucariontes, pois procariontes não possuem
+                    citoesqueleto, fundamental para a movimentação das vesículas formadas no processo.</p>
             </div>
+
+            <!-- Terceiro assunto -->
+            <div class="feature-item">
+                <h3>Diapedese</h3>
+                <img id="diapedese-img" src="imagens/diapedese.jpeg" alt="Diapedese">
+                <button data-trocar data-target="ddiapedese-img" data-novasrc="imagens/diapedese.png" onclick="trocarImagem('diapedese-img', 'imagens/diapedese.png')">Trocar imagem da diapedese</button>
+                <p>A diapedese é o processo pelo qual os leucócitos, ou glóbulos brancos, saem dos vasos sanguíneos
+                    e passam para o tecido conjuntivo.
+
+                    A diapedese é um fenômeno fundamental do sistema imunológico, que ocorre em resposta a danos
+                    teciduais, como infecções e inflamações.
+
+                    A diapedese envolve uma série de etapas complexas, que incluem a rolamento dos leucócitos, a
+                    ligação com moléculas de adesão e a migração para o espaço intersticial.
+
+                    A diapedese também pode se referir à passagem de componentes do sangue para o espaço
+                    intersticial, formando edemas e, em casos patológicos, como a diátese hemorrágic</p>
+                <button onclick="trocarImagem('diapedese-img', 'imagens/diapedese.png')">Trocar Imagem</button>
+            </div>
+        </div>
     </section>
-<div class="feature-item">
-    <h3>Leucócitos</h3>
-    <div style="display: flex; align-items: center;">
-        <img id="img-leucocitos" src="imagens/leocócitos.jpeg" alt="Leucócitos">
-        <button class="info-button" onclick="changeImage('img-leucocitos', 'imagens/leucocitos-alterada.jpeg')">Trocar imagem</button>
-    </div>
-</div>
 
-<div class="feature-item">
-    <h3>Endocitose</h3>
-    <div style="display: flex; align-items: center;">
-        <img id="img-endocitose" src="imagens/endocitose.jpeg" alt="Endocitose">
-        <button class="info-button" onclick="changeImage('img-endocitose', 'imagens/endocitose-alterada.jpeg')">Trocar imagem</button>
-    </div>
-</div>
-
-<div class="feature-item">
-    <h3>Diapedese</h3>
-    <div style="display: flex; align-items: center;">
-        <img id="img-diapedese" src="imagens/diapedese.jpeg" alt="Diapedese">
-        <button class="info-button" onclick="changeImage('img-diapedese', 'imagens/diapedese-alterada.jpeg')">Trocar imagem</button>
-    </div>
-</div>
-    <!-- Sessão com o vídeo  -->
+    <!-- Sessão com o vídeo -->
     <section class="section" id="vídeo">
         <h2>Vídeo Complementar</h2>
         <div class="video-container">
@@ -136,26 +116,26 @@
     <!-- Área com os integrantes do grupo -->
     <section class="section" id="integrantes">
         <h2>Integrantes</h2>
-        <p>Esses são os integrantes que compõem o nosso grupo </p>
+        <p>Esses são os integrantes que compõem o nosso grupo</p>
         <div class="feature-item">
             <h3>Arthur Silva</h3>
-            <img src="imagens/arthur.png">
+            <img src="imagens/arthur.png" alt="Arthur Silva">
             <p><b>Instagram:</b><a href="https://www.instagram.com/opsthurzx/"> opsthurzx</a></p>
         </div>
         <div class="feature-item">
             <h3>Fernando Otavio</h3>
-            <img src="imagens/fernando.jpeg">
+            <img src="imagens/fernando.jpeg" alt="Fernando Otavio">
             <p><b>Instagram:</b><a href="https://www.instagram.com/f.otavio14_/"> f.otavio14_</a></p>
         </div>
         <div class="feature-item">
             <h3>José Cauã</h3>
-            <img src="imagens/cauã.jpg">
+            <img src="imagens/cauã.jpg" alt="José Cauã">
             <p><b>Instagram:</b><a href="https://www.instagram.com/caua14m/"> caua14m</a></p>
         </div>
         <div class="feature-item">
             <h3>Tevez Henrique</h3>
-            <img src="imagens/tevez.jpeg">
-            <p><b>Instagram:</b><a href="https://www.instagram.com/tevz.h_/">tevz.h_</a></p>
+            <img src="imagens/tevez.jpeg" alt="Tevez Henrique">
+            <p><b>Instagram:</b><a href="https://www.instagram.com/tevz.h_/"> tevz.h_</a></p>
         </div>
     </section>
 
@@ -180,11 +160,12 @@
                     </ul>
                     <hr />
                 </div>
-
             </div>
         </div>
     </footer>
-
+    <button data-trocar data-target="leucocitos-img" data-novasrc="imagens/leucocitos-alt.jpeg">Trocar Imagem</button>
+    <button data-trocar data-target="endocitose-img" data-novasrc="imagens/endocitose-alt.jpeg">Trocar Imagem</button>
+    <button data-trocar data-target="diapedese-img" data-novasrc="imagens/diapedese-alt.jpeg">Trocar Imagem</button>
+    <script src="script.js"></script>
 </body>
-
 </html>
