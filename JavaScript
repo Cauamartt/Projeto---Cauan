@@ -1,8 +1,0 @@
-<script>
-    function changeImage(imgId, newSrc) {
-        const imgElement = document.getElementById(imgId);
-        if (imgElement) {
-            imgElement.src = newSrc;
-        }
-    }
-</script>
